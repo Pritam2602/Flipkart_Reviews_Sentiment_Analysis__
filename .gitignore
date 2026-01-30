@@ -95,8 +95,8 @@ Thumbs.db
 *.key
 
 # dependencies
-/node_modules
-/.pnp
+frotnend/node_modules/
+frontend/.pnp
 .pnp.js
 
 # testing
