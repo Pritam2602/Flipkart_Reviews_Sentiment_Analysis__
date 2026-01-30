@@ -27,3 +27,7 @@ seaborn>=0.13.0
 
 # Utility
 tqdm>=4.66.0
+
+#Backend
+Flask==3.0.2
+flask-cors==4.0.0
