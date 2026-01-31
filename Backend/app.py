@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # allow React to talk to Flask
 
 # -------------------- Load MLflow Model --------------------
-MODEL_URI = "models:/Flipkart_Sentiment_Best_Model/Production"
+MODEL_URI = "models:/Flipkart_Sentiment_Best_Model/2"
 
 model = mlflow.pyfunc.load_model(MODEL_URI)
 
@@ -17,7 +17,7 @@ def health():
     return jsonify({"status": "ok"})
 
 
-@app.route("/predict", methods=["POST"])
+@app.route("/predict", methods=["POST","GET"])
 def predict():
     data = request.get_json()
 
